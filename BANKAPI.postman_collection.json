@@ -1,0 +1,405 @@
+{
+	"info": {
+		"_postman_id": "68000e3e-9baa-49a5-ac8d-8751c08b5029",
+		"name": "BANKAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Crear Cliente 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombres\":\"JOSE LEMA\",\r\n    \"Genero\":\"M\",\r\n    \"Edad\":20,\r\n    \"Identificacion\":\"0222143\",\r\n    \"Direccion\":\"Otavalo sn y principal\",\r\n    \"Telefono\":\"098254785\",\r\n    \"Contrasenia\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clientes/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Cliente 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombres\":\"MARIANELA MONTALVO\",\r\n    \"Genero\":\"M\",\r\n    \"Edad\":20,\r\n    \"Identificacion\":\"022217\",\r\n    \"Direccion\":\"GUAYAQUIL ALBORADA\",\r\n    \"Telefono\":\"097548965\",\r\n    \"Contrasenia\":\"5678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clientes/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Cliente 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombres\":\"JUAN OSORIO\",\r\n    \"Genero\":\"M\",\r\n    \"Edad\":23,\r\n    \"Identificacion\":\"02217143\",\r\n    \"Direccion\":\"GUAYAQUIL ALBORADA\",\r\n    \"Telefono\":\"098874587\",\r\n    \"Contrasenia\":\"1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clientes/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Todos los Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clientes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clientes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Cliente By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clientes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombres\":\"MARIANELA MONTALVO\",\r\n    \"Genero\":\"F\",\r\n    \"Edad\":20,\r\n    \"Identificacion\":\"022217\",\r\n    \"Direccion\":\"GUAYAQUIL ALBORADA\",\r\n    \"Telefono\":\"097548965\",\r\n    \"Contrasenia\":\"5678\",\r\n    \"Estado\":\"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clientes/2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "Crear cuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NumeroCuenta\":\"478759\",\r\n    \"TipoCuenta\":\"Corriente\",\r\n    \"SaldoInicial\":2000,\r\n    \"Estado\":true,\r\n    \"IdUsuario\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cuentas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener cuenta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cuentas/478758",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cuentas",
+								"478758"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar cuenta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cuentas/478758",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cuentas",
+								"478758"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desactivar cuenta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cuentas/desactivar/478758",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cuentas",
+								"desactivar",
+								"478758"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "Deposito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TipoMovimiento\":\"Deposito\",\r\n    \"Valor\":200,\r\n    \"IdCliente\":1,\r\n    \"IdCuenta\":\"478758\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/movimientos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retiro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TipoMovimiento\":\"Retiro\",\r\n    \"Valor\":100,\r\n    \"IdCliente\":8,\r\n    \"IdCuenta\":\"478759\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/movimientos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Movimiento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/movimientos/478758",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movimientos",
+								"478758"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Estado Cuenta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/movimientos/reportes?idCliente=1&rangoFecha=01/01/2022-12/31/2022",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movimientos",
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "idCliente",
+									"value": "1"
+								},
+								{
+									"key": "rangoFecha",
+									"value": "01/01/2022-12/31/2022"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "localhost:3000"
+		}
+	]
+}
